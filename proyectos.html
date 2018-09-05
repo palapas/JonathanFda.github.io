@@ -26,7 +26,7 @@
         <!-- Template CSS Files
         ================================================== -->
         <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Ionicons Fonts Css -->
         <link rel="stylesheet" href="css/ionicons.min.css">
         <!-- animate css -->
@@ -77,66 +77,55 @@
 </style>
     </head>
     <body>
+      <header class="animated-header">
+    <div class="container" >
+              <!-- main menu -->
+<nav class="navbar navbar-expand-lg fixed-top ">
+ <div class="container">
 
-        <header id="top-bar" class="navbar-fixed-top animated-header">
-            <div class="container" >
-                <div class="navbar-header">
-                    <!-- responsive nav button -->
-                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="sr-only">Toggle navigation</span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    </button>
-                    <!-- /responsive nav button -->
-                   
-                    <!-- logo -->
-                    <div data-wow-iteration="5" data-wow-duration="0.15s" class="navbar-brand wow shake">
-                        <a href="index.html" class="smooth-scroll" data-section="#hero-area" >
-                            <img class="logo" src="images/logo.png" alt="">
-                        </a>
-                    </div>
-                    <!-- /logo -->
-                </div>
-                <!-- main menu -->
-                <nav class="collapse navbar-collapse navbar-right" role="navigation">
-                    <div class="main-menu">
-                        <ul class="nav navbar-nav navbar-right">
-                            <li>
-                                <a href="index.html"  data-section="#hero-area" ><i class="ion-android-globe" style="color:#3a93f2"></i>  H0m3</a>
-                            </li>
-                              <li>
-                                <a href="proyectos.html"  data-section="#hero-area" ><i class="ion-ios-flask-outline" style="color:#fb0038"></i>  Pr0yecto5</a>
-                            </li>
-						  
-                            <li><a href="#call-to-action" class="smooth-scroll" data-section="#call-to-action"><i class="ion-planet" style="color:#205c30"></i>  C0nt4ct0</a></li>
-                        </ul>
-                    </div>
-                </nav>
-                <!-- /main nav -->
-            </div>
-        </header>
+<a data-wow-iteration="5" data-wow-duration="0.15s" class="navbar-brand smooth-scroll wow shake" data-section="#hero-area"  href="#hero-area">
+  <img class="logo" src="images/logo.png" alt="">
+</a>
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+
+<div class="collapse navbar-collapse" id="navbarSupportedContent">
+
+  <ul class="navbar-nav ml-auto ">
+    <a class="nav-link" href="#hero-area"  data-section="#hero-area"><i class="ion-android-globe" style="color:#3a93f2">
+      </i> Home <span class="sr-only">(current)</span>
+    </a>
+    <a class="nav-link" href="proyectos.html" ><i class="ion-ios-flask-outline" style="color:#fb0038" > </i> Proyectos </a>
+    <a class="nav-link" href="proyectos.html" ><i class="ion-planet" style="color:#205c30"> </i> Contacto </a>
+  </ul>
+</div>
+</div>
+</nav>
+    <!-- /main nav -->
+          </div>
+      </header>
 
         <section id="hero-area"  style="background:url(images/code.jpg) no-repeat; height:240px" >
             <div class="container">
                 <div class="row">
                     <div class="col-md-12 text-center">
                         <div class="block wow fadeInUp" data-wow-delay="1.5s">
-                            
+
                             <!-- Slider -->
                             <section class="cd-intro">
-							
+
                                 <h1 class="wow fadeInUp animated cd-headline slide" data-wow-delay="1.5s" >
 								<span> <i class="ion-ios-arrow-thin-right"></i> <i class="ion-ios-flask-outline"  style="color:#fb0038"></i>
 								<span style="display:inline-block;color:white;background:rgba(0, 112, 255, 0.61);letter-spacing:3px; padding:2px 4px">Pr0yecto5</span><span class="cursor" >|</span><br><br>
 
-                            
+
                                 </h1>
                                 </section> <!-- cd-intro -->
                                 <!-- /.slider -->
-                         
 
-                                
+
+
                             </div>
                         </div>
                     </div>
@@ -215,7 +204,7 @@ A continuaci&oacute;n podr&aacute; encontrar los trabajos m&aacute;s recientes c
                                 <p>
                                  COcoViVo es un exclusivo retiro.. <br>
 								 En una isla!
-								 
+
                                 </p>
                                 </figcaption>
                             </figure>
@@ -330,7 +319,7 @@ A continuaci&oacute;n podr&aacute; encontrar los trabajos m&aacute;s recientes c
                                 </figcaption>
                             </figure>
                         </div>
-						
+
                         <div class="col-sm-4 col-xs-12">
                             <figure class="wow fadeInLeft animated" data-wow-duration="500ms" data-wow-delay="1200ms">
                                 <div class="img-wrapper">
@@ -507,7 +496,7 @@ A continuaci&oacute;n podr&aacute; encontrar los trabajos m&aacute;s recientes c
                                 </figcaption>
                             </figure>
                         </div>
-						
+
                     </div>
                 </div>
 				<div style="text-align:center">
@@ -515,8 +504,8 @@ A continuaci&oacute;n podr&aacute; encontrar los trabajos m&aacute;s recientes c
 
 				</div>
             </section> <!-- #works -->
-  
-                            
+
+
             <!--
             ==================================================
             Call To Action Section Start
@@ -532,30 +521,31 @@ A continuaci&oacute;n podr&aacute; encontrar los trabajos m&aacute;s recientes c
 								</h2>
                                 <p class="wow fadeInDown" data-wow-delay=".5s" data-wow-duration="500ms">
 Puede comunicarse o solicitar una cotizaci&oacute;n gratuita a trav&eacute;s del siguiente formulario:</p>
-      <div class="contact-form" style="width:500px; max-width:100%; margin:0 auto 0 auto">
-                                <form id="contact-form" name="contact-form" method="get" action="mailer.php" role="form">
-                        
+      <div class="contact-form" style="width:500px; max-width:100%; margin:0 auto 0 auto" >
+                                <form id="contact-form gform needs-validation" name="contact-form" data-email="jonathan.fer.de@gmail.com"
+                                      action="https://script.google.com/macros/s/AKfycbxLvEXCFZOsfdJeZytU2j7FQJ903cbCB2txsbRgRVQcdKPrYvDg/exec"  role="form" novalidate>
+
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".6s">
  <input type="text" placeholder="Nombre" class="form-control" name="name" id="name">
                                     </div>
-                                    
+
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay=".8s">
                                         <input type="email" placeholder="Email" class="form-control" name="email" id="email" >
                                     </div>
-                                    
+
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1s">
                                         <input type="text" placeholder="Sujeto" class="form-control" name="subject" id="subject">
                                     </div>
-                                    
+
                                     <div class="form-group wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.2s">
-                                        <textarea rows="6" placeholder="Mensaje" class="form-control" name="message" id="message"></textarea>    
+                                        <textarea rows="6" placeholder="Mensaje" class="form-control" name="message" id="message"></textarea>
                                     </div>
-                                    
-                                    
+
+
                                     <div id="submit" class="wow fadeInDown" data-wow-duration="500ms" data-wow-delay="1.4s">
                                         <input type="submit" id="contact-submit" class="btn btn-default btn-send" value="Enviar">
-                                    </div>                      
-                                    
+                                    </div>
+
                                 </form>
 								<script language="JavaScript" type="text/javascript" xml:space="preserve">
 								var frmvalidator = new Validator("contact-form");
@@ -574,7 +564,7 @@ Puede comunicarse o solicitar una cotizaci&oacute;n gratuita a trav&eacute;s del
 </script>
                             </div>                            </div>
                         </div>
-                        
+
                     </div>
                 </div>
             </section>
@@ -595,8 +585,8 @@ Puede comunicarse o solicitar una cotizaci&oacute;n gratuita a trav&eacute;s del
                                     <i class="ion-social-facebook"></i>
                                 </a>
                             </li>
-                        
-                       
+
+
                             <li>
                                 <a href="https://www.instagram.com/jonathan_fda/" target="_blank" class="Instagram">
                                     <i class="ion-social-instagram"></i>
@@ -607,7 +597,7 @@ Puede comunicarse o solicitar una cotizaci&oacute;n gratuita a trav&eacute;s del
                 </div>
             </footer> <!-- /#footer -->
                 <script>
-				
+
   (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
