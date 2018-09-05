@@ -30,7 +30,7 @@
         <!-- Template CSS Files
         ================================================== -->
         <!-- Twitter Bootstrs CSS -->
-        <link rel="stylesheet" href="css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <!-- Ionicons Fonts Css -->
         <link rel="stylesheet" href="css/ionicons.min.css">
         <!-- animate css -->
@@ -50,13 +50,13 @@
         <!-- modernizr js -->
         <script src="js/vendor/modernizr-2.6.2.min.js"></script>
         <!-- jquery -->
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
         <!-- owl carouserl js -->
         <script src="js/owl.carousel.min.js"></script>
         <!-- bootstrap js -->
-
-        <script src="js/bootstrap.min.js"></script>
-        <!-- wow js -->
+   <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+          <!-- wow js -->
         <script src="js/wow.min.js"></script>
         <!-- slider js -->
         <script src="js/slider.js"></script>
@@ -612,19 +612,51 @@ A continuaci&oacute;n podr&aacute; encontrar los trabajos m&aacute;s recientes c
       action="https://script.google.com/macros/s/AKfycbxLvEXCFZOsfdJeZytU2j7FQJ903cbCB2txsbRgRVQcdKPrYvDg/exec" class="gform needs-validation" novalidate>
 <div class="form-group">
     <input type="text" class="form-control" name="name" id="nombre" placeholder="Nombre" required>
+	 <div class="invalid-feedback">
+	Introduzca su nombre
+	</div>
   </div>
  <div class="form-group">
 	 <input type="email" class="form-control" name="email" id="email" placeholder="Email" required>
+	 	 <div class="invalid-feedback">
+	Introduzca su Email
+	</div>
   </div>
 	<div class="form-group">
     <input type="text" class="form-control" name="subject" id="asunto" placeholder="Asunto" required>
+			 <div class="invalid-feedback">
+	Introduzca un Asunto
+	</div>
   </div>
 	 <div class="form-group">
 	 <input type="text" class="form-control" name="message" id="Mensaje" placeholder="Mensaje" required>
+		 	 <div class="invalid-feedback">
+	Introduzca su mensaje
+	</div>
   </div>
 
   <button type="submit" class="btn btn-default">Enviar</button>
 </form>
+				    <script>
+// Example starter JavaScript for disabling form submissions if there are invalid fields
+(function() {
+  'use strict';
+  window.addEventListener('load', function() {
+    // Fetch all the forms we want to apply custom Bootstrap validation styles to
+    var forms = document.getElementsByClassName('needs-validation');
+    // Loop over them and prevent submission
+    var validation = Array.prototype.filter.call(forms, function(form) {
+      form.addEventListener('submit', function(event) {
+        if (form.checkValidity() === false) {
+          event.preventDefault();
+          event.stopPropagation();
+        }
+        form.classList.add('was-validated');
+      }, false);
+    });
+  }, false);
+})();
+</script>
                            </div>
                         </div>
                         
