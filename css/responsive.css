@@ -60,7 +60,7 @@ px      68    160    252    */
     padding: 6px 8px;
   }
   #hero-area {
-    padding: 100px 0;
+    padding: 140px 0 100px 0;
 	background-attachment: fixed !important;
 	-webkit-background-size: cover;
   -moz-background-size: cover;
@@ -110,7 +110,7 @@ px      68    160    252    */
     box-shadow: 0 2px 0.09px rgba(0, 0, 0, 0.15);
   }
   .navbar-collapse {
-    background: rgba(100, 102, 105, 0.73);
+    background: rgba(255, 255, 255, 0.73);
   }
   #top-bar .main-menu li > a {
     color: #fff;
